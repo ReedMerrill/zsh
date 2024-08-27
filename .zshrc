@@ -17,7 +17,7 @@ setopt autocd
 
 
 # zsh-autocomplete
-source "/usr/local/bin/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+# source "/usr/local/bin/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
