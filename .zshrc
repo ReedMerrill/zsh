@@ -27,22 +27,10 @@ export PATH="/Users/reed/Scripts:$PATH"
 # source main aliases script
 source ~/.aliases
 
-# Lazygit
-alias lg='lazygit'
 # listing (eza is an awesome ls replacement)
 alias l="eza -l --icons --git --all --modified"
 # list with 2-level tree
 alias lt="eza --tree --level=2 --all --long --icons --git --modified"
-# [s]ource .zshrc
-alias so='source ~/.zshrc'
-# [g]it [s]tatus
-alias gs='git status'
-# make R not prompt to save workspace on exit
-alias R='R --no-save'
-# [n]uclear [r]e[m]ove
-alias nrm='sudo rm -r'
-# clear
-alias cl='clear'
 
 # Directory Navigation
 
