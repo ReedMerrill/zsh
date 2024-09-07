@@ -1,3 +1,6 @@
+# disable ctrl-l clearing the screen
+bindkey -r "^L"
+
 # make arguments to cd that aren't directories assumed to be a variable who's
 # value is a directory. Useful for "aliasing" directories
 setopt cdablevars
@@ -11,12 +14,8 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(git)
 
-# editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
+# set editor
+export EDITOR="$(which nvim)"
 
 # Add scripts dir to path
 export PATH="/Users/reed/Scripts:$PATH"
@@ -45,13 +44,6 @@ alias df='cd ~/dotfiles/nvim/.config/nvim/ && nvim .'
 
 ################################################################################
 # INITIALIZATIONS
-
-# make sure neovim can be found
-export VISUAL='/usr/bin/nvim'
-export EDITOR='/usr/bin/nvim'
-
-# disable ctrl-l clearing the screen
-bindkey -r "^L"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
