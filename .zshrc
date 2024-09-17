@@ -23,6 +23,9 @@ export PATH="/Users/reed/Scripts:$PATH"
 ################################################################################
 # ALIASES & HASHES (MacOS only)
 
+# stop using BSD sed, start using GNU sed
+alias sed="gsed"
+
 # source main aliases script
 source ~/.aliases
 
