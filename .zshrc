@@ -50,3 +50,4 @@ alias df='cd ~/dotfiles/nvim/.config/nvim/ && nvim .'
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+source <(fzf --zsh)
